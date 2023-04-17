@@ -1,0 +1,21 @@
+# 推特作者的全拼方案模糊音自定义设置
+patch:
+  # 开关
+  # 鼠须管 0.16 后，快捷键切换时的提示由 states 自定义。
+  switches:
+    - name: ascii_mode
+      states: [ 中, A ]
+      reset: 0
+    - name: full_shape
+      # states: [ 半角, 全角 ]
+      reset: 0
+    - name: ascii_punct
+      states: [ ¥, $ ]  # 中英标点
+      reset: 0
+    - name: traditionalization
+      states: [ 简, 繁 ]
+      reset: 0
+    - name: emoji
+      states: [ 💀, 😄 ]
+      reset: 1
+  
